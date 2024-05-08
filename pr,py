@@ -1,0 +1,27 @@
+def main():
+    print("The length of passwords should be minimum length of 3")
+    n=input("how many passwords do you want")
+    upper_case=input("uppercase letters to be in password")
+    lower_case=input("how many lower case letters to be in password")
+    digits=input("how many digits to be in password")
+    special=input("how many special characters to be in password")
+    if len(upper_case+lower_case+digits+special)!=0:
+        print("your selection for length of password does not matches with inputs")
+        
+
+
+main()  def add_lower():
+    for i in range(lower_case):
+        lo=random.choice(lowerc)
+        password.append(lo)
+def add_digit():
+    for i in range(digits):
+        di=random.choice(digitc)
+        password.append(di)
+def add_special():
+    for i in range(specialc):
+        sp=random.choice(specialc)
+        password.append(sp)
+        add_lower()
+add_digit()  
+add_special()
