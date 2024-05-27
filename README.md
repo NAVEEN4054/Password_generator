@@ -1,38 +1,82 @@
-# Password_generator
-This is a simple password generator script that generates random passwords based on specified criteria.
+# Password Generator
 
-Overview:
+## Introduction
 
-The Random Password Generator is a Python script designed to create strong and secure passwords with customizable criteria such as length and character types.
+Welcome to the Password Generator! This command-line tool helps you create secure and random passwords of specified lengths. With options to include uppercase letters, lowercase letters, digits, and special characters, you can ensure your passwords are both strong and unique.
 
-Features:
+## Features
 
--Generate random passwords of varying lengths.   
--Include lowercase letters, uppercase letters, digits, and special characters in generated passwords.   
--Customizable password length and character type preferences.   
+- **Custom Lengths**: Generate passwords of specified lengths.
+- **Character Variety**: Include uppercase letters, lowercase letters, digits, and special characters.
+- **Randomness**: Each password is randomly generated and shuffled for maximum security.
+- **Multiple Passwords**: Generate multiple passwords in a single run.
 
-Requirements:
+## Getting Started
 
-Python 3.6
+### Prerequisites
 
-Getting Started:
+- Python 3.x
 
-Installation
+### How to Use
 
-1.Clone the Repository.   
-2.Navigate to the Project Directory.   
+1. **Download the Script**: Save the following code to a file named `password_generator.py`.
 
-Contributing
+2. **Run the Script**: Open your terminal or command prompt, navigate to the directory containing the script, and run:
 
-Contributions are welcome! Please follow these guidelines when contributing to the project:
+    ```bash
+    python password_generator.py
+    ```
 
-1.Fork the repository.  
-2.Create a new branch for your feature or bug fix.  
-3.Make your changes and ensure they are well-tested.    
-4.Commit your changes with clear and descriptive messages.   
-5.Push your changes to your fork and submit a pull request to the main repository.   
+3. **Follow the Prompts**: Enter the required information when prompted.
 
-Lisence:
+### Example Session
 
-This project is licensed under the MIT License.
+1. **Minimum Length Requirement**: The script ensures that each password is at least 3 characters long.
 
+    ```plaintext
+    Minimum length of password should be 3
+    ```
+
+2. **Number of Passwords**: Enter how many passwords you want to generate.
+
+    ```plaintext
+    How many passwords do you want to generate? 3
+    ```
+
+3. **Password Lengths**: Specify the length of each password. If the length is less than 3, a warning will be displayed.
+
+    ```plaintext
+    Enter the length of password #1: 8
+    Enter the length of password #2: 5
+    Enter the length of password #3: 2
+    ```
+
+4. **Generated Passwords**: The script generates and displays the passwords.
+
+    ```plaintext
+    password #1 = h@6P%vN2
+    password #2 = a9Z@w
+    spooky choice! length of password #3 is less than minimum length
+    ```
+
+## Code Explanation
+
+### Imports and Constants
+
+The script imports the `random` module and defines character sets for uppercase, lowercase, digits, and special characters.
+
+### Password Generation Function
+
+The add_upper function generates the required passwords. It uses nested loops to create each password character by character, shuffles the characters to enhance randomness, and then stores the results.
+
+### User Input and Execution
+
+The script prompts the user for the number of passwords and their lengths. It ensures that each password meets the minimum length requirement.
+
+## Contributions
+
+If you have suggestions for improvements or find any issues, please feel free to fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
